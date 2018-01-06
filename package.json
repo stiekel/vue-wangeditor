@@ -1,0 +1,27 @@
+{
+  "name": "vue-wang-editor",
+  "version": "0.0.1",
+  "description": "WangEditor for vue",
+  "main": "vue-wang-editor.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stiekel/vue-wang-editor.git"
+  },
+  "keywords": [
+    "vue",
+    "editor",
+    "WangEditor"
+  ],
+  "author": "stiekel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stiekel/vue-wang-editor/issues"
+  },
+  "homepage": "https://github.com/stiekel/vue-wang-editor#readme",
+  "dependencies": {
+    "wangeditor": "^3.0.15"
+  }
+}
