@@ -1,6 +1,6 @@
 {
   "name": "vue-wangeditor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WangEditor for vue",
   "main": "vue-wangeditor.vue",
   "repository": {
