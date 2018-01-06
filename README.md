@@ -46,4 +46,4 @@ export default {
 ['head', 'bold', 'italic', 'underline', 'strikeThrough', 'foreColor', 'backColor', 'link', 'list', 'justify', 'quote', 'emoticon', 'image', 'table', 'video', 'code', 'undo', 'redo']
 ```
 
-You can get [full menu config in [WangEditor Documents])(https://www.kancloud.cn/wangfupeng/wangeditor3/335777).
+You can get [full menu config in [WangEditor Documents](https://www.kancloud.cn/wangfupeng/wangeditor3/335777).
