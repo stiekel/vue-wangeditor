@@ -1,5 +1,5 @@
 <template>
-<div v-html="value" ref="editor"></div>
+<div id="vue-wangeditor" ref="editor"></div>
 </template>
 
 <script type="text/javascript">
@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       // instance of wangEditor
-      instance: null,
+      instance: null
     }
   },
   methods: {
@@ -25,9 +25,12 @@ export default {
       this.$set(this, 'instance', new WangEditor(this.$refs.editor))
       this.instance.customConfig.menus = this.weMenus
       this.instance.customConfig.onchange = (html) => {
-        this.$emit('input', html)
+        this.$nextTick(_ => {
+          this.$emit('input', html)
+        })
       }
       this.instance.create()
+      this.instance.txt.html(this.value)
     }
   },
   computed: {
@@ -40,9 +43,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(_ => {
-      this.init()
-    })
+    this.init()
   }
 }
 </script>
