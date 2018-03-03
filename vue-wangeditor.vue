@@ -33,6 +33,17 @@ export default {
       this.instance.txt.html(this.value)
     }
   },
+  watch: {
+    value (nv, ov) {
+      if (!this.instance) {
+        return
+      }
+      let currentHTML = this.instance.txt.html()
+      if (currentHTML !== nv) {
+        this.instance.txt.html(nv)
+      }
+    }
+  },
   computed: {
     weMenus () {
       if (this.menus && this.menus instanceof Array && this.menus.length) {
