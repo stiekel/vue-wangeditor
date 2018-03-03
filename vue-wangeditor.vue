@@ -53,6 +53,11 @@ export default {
       }
     }
   },
+  watch: {
+    'value' () {
+      this.instance.txt.html(this.value)
+    }
+  },
   mounted () {
     this.init()
   }
